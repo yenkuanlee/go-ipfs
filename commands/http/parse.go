@@ -3,15 +3,14 @@ package http
 import (
 	"errors"
 	"fmt"
+	cmds "github.com/ipfs/go-ipfs/commands"
+	path "github.com/ipfs/go-ipfs/path"
 	"mime"
 	"net/http"
 	"strings"
 
 	"gx/ipfs/QmYiqbfRCkryYvJsxBopy77YEhxNZXTmq5Y2qiKyenc59C/go-ipfs-cmdkit"
 	"gx/ipfs/QmYiqbfRCkryYvJsxBopy77YEhxNZXTmq5Y2qiKyenc59C/go-ipfs-cmdkit/files"
-
-	cmds "github.com/ipfs/go-ipfs/commands"
-	path "github.com/ipfs/go-ipfs/path"
 )
 
 // Parse parses the data in a http.Request and returns a command Request object
