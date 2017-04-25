@@ -12,9 +12,9 @@ import (
 	ocmd "github.com/ipfs/go-ipfs/core/commands/object"
 	unixfs "github.com/ipfs/go-ipfs/core/commands/unixfs"
 
-	"gx/ipfs/QmRTwaSETX8m9rVAD9QacsoxFMURcuSoLDhf1jtABzCcLP/go-ipfs-cmds"
 	logging "gx/ipfs/QmSpJByNKFX1sCsHBEp3R73FL4NF6FnQTEGyNAXHm2GS52/go-log"
-	"gx/ipfs/QmYiqbfRCkryYvJsxBopy77YEhxNZXTmq5Y2qiKyenc59C/go-ipfs-cmdkit"
+	"gx/ipfs/QmYAri1etRFXVrE7bkFSdpAMpoTiSCUTQnKpuDMPA2feCp/go-ipfs-cmds"
+	"gx/ipfs/QmadYQbq2fJpaRE3XhpMLH68NNxmWMwfMQy1ntr1cKf7eo/go-ipfs-cmdkit"
 )
 
 var log = logging.Logger("core/commands")

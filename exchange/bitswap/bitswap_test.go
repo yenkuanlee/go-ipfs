@@ -18,7 +18,7 @@ import (
 
 	detectrace "github.com/ipfs/go-ipfs/Godeps/_workspace/src/github.com/jbenet/go-detect-race"
 
-	p2ptestutil "gx/ipfs/QmNqvnxGtJBaKQnenD6uboNGdjSjHGmZGRxMHEevKJe5Pk/go-libp2p-netutil"
+	p2ptestutil "gx/ipfs/QmcCgouQ5iXfmxmVNc1fpXLacRSPMNHx4tzqDpou6XNvvd/go-libp2p-netutil"
 	cid "gx/ipfs/QmYhQaCYEcaPPjxJX7YcPcVKkQfRy6sJ7B3XmGFk82XYdQ/go-cid"
 )
 

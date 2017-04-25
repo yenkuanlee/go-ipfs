@@ -9,7 +9,7 @@ import (
 	e "github.com/ipfs/go-ipfs/core/commands/e"
 	namesys "github.com/ipfs/go-ipfs/namesys"
 	offline "github.com/ipfs/go-ipfs/routing/offline"
-	"gx/ipfs/QmYiqbfRCkryYvJsxBopy77YEhxNZXTmq5Y2qiKyenc59C/go-ipfs-cmdkit"
+	"gx/ipfs/QmadYQbq2fJpaRE3XhpMLH68NNxmWMwfMQy1ntr1cKf7eo/go-ipfs-cmdkit"
 )
 
 var IpnsCmd = &cmds.Command{
