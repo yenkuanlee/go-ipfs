@@ -13,6 +13,7 @@ const PrivKeySelector = IdentityTag + "." + PrivKeyTag
 type Identity struct {
 	PeerID  string
 	PrivKey string `json:",omitempty"`
+	GroupID string
 }
 
 // DecodePrivateKey is a helper to decode the users PrivateKey

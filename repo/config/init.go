@@ -1,6 +1,12 @@
 package config
 
 import (
+	"os/exec"
+	"os"
+	"bufio"
+	"strings"
+	"io/ioutil"
+
 	"encoding/base64"
 	"errors"
 	"fmt"
@@ -120,6 +126,45 @@ func identityConfig(out io.Writer, nbits int) (Identity, error) {
 		return ident, err
 	}
 	ident.PeerID = id.Pretty()
+
+	// Generate unique GroupID
+	cmd := exec.Command("sudo","cp","/proc/sys/kernel/random/uuid","/tmp/.uuid.txt")
+	cmd.Run()
+	cmd2 := exec.Command("sudo","chmod","0777","/tmp/.uuid.txt")
+	cmd2.Run()
+	Estring := base64.StdEncoding.EncodeToString([]byte(GetDomainName()+GetUuid()))
+	ident.GroupID = Estring
+
 	fmt.Fprintf(out, "peer identity: %s\n", ident.PeerID)
 	return ident, nil
 }
+
+func GetUuid() string{
+	inputFile, Error := os.Open("/tmp/.uuid.txt")
+	if Error != nil {
+		fmt.Println("get uuid error !!")
+		return "NO FILE"
+	}
+	defer inputFile.Close()
+	inputReader := bufio.NewReader(inputFile)
+	inputString, Error := inputReader.ReadString('\n')
+	if Error == io.EOF {
+		return "NO CONTENT"
+	}
+	return strings.Replace(inputString,"\n","",-1)
+}
+
+func GetDomainName() string{
+	dat, err := ioutil.ReadFile("/opt/iservstor/conf/iservstor.conf")
+	if err != nil{
+		fmt.Println("get domain name error !!")
+		return "NO FILE"
+	}
+	tmp := strings.Split(string(dat),"DOMAIN_NAME")[1]
+	tmpp := strings.Split(tmp,"\n")[0]
+	tmppp := strings.Split(tmpp,"=")[1]
+	DomainName := strings.Replace(tmppp," ","",-1)
+	fmt.Printf("\nKEVIN DOMAIN NAME : %s\n",DomainName)
+	return DomainName
+}
+
