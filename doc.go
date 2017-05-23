@@ -1,4 +1,5 @@
 /*
+I am Kevin Yen-Kuan Lee
 IPFS is a global, versioned, peer-to-peer filesystem
 
 There are sub-packages within the ipfs package for various low-level
