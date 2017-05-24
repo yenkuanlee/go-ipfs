@@ -69,7 +69,7 @@ import (
 	ma "gx/ipfs/QmcyqRMCAXVtYPS4DiBrA7sezL9rRGfW8Ctx7cywL4TXJj/go-multiaddr"
 	peer "gx/ipfs/QmdS9KpbDyPrieswibZhkod1oXqRwZJrUPzxCofAMWpFGq/go-libp2p-peer"
 	smux "gx/ipfs/QmeZBgYBHvxMukGK5ojg28BCNLB9SeXqT7XXg6o7r2GbJy/go-stream-muxer"
-	swarm "gx/ipfs/Qmeo7oJxR65PLPx68KPFi8rjzcEmmWN2dL66fPuq9nVMv8/go-libp2p-swarm"
+	swarm "gx/ipfs/QmRExus9S2Pu5cF5cKxsirM9mDji3zEBB4JqwjNq5R1tcx/go-libp2p-swarm"
 )
 
 const IpnsValidatorTag = "ipns"
