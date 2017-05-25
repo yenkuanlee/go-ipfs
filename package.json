@@ -14,7 +14,19 @@
     },
     {
       "author": "yenkuanlee",
-      "hash": "QmV4HCWMdsUGPWdejnKN7aGNaHtGMSMQ5w8Dx6HCfVADM9",
+      "hash": "QmTKB1EGzieC8CifVZgC3PJnt7gBewdyhWJEUuR4NAdk6M",
+      "name": "go-libp2p-swarm",
+      "version": "0.0.1"
+    },
+    {
+      "author": "yenkuanlee",
+      "hash": "QmdYGMJbhsxxpFnkBHaEcmDPcTP32yFJiGuJvYXrtjg4Bf",
+      "name": "go-libp2p-conn",
+      "version": "0.0.1"
+    },
+    {
+      "author": "yenkuanlee",
+      "hash": "QmbR1gbNWuGw15dxx9UfFY2hPejUrdVVRGBxJ3NiMhoYgQ",
       "name": "go-libp2p-secio",
       "version": "1.1.7"
     },

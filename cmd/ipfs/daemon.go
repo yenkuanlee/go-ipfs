@@ -24,7 +24,7 @@ import (
 	pstore "gx/ipfs/QmNUVzEjq3XWJ89hegahPvyfJbTXgTaom48pLb7YBD9gHQ/go-libp2p-peerstore"
 	mprome "gx/ipfs/QmSk46nSD78YiuNojYMS8NW6hSCjH95JajqqzzoychZgef/go-metrics-prometheus"
 	"gx/ipfs/QmX3QZ5jHEPidwUrymXV1iSCSUhdGxj15sm2gP4jKMef7B/client_golang/prometheus"
-	iconn "gx/ipfs/QmNxRo1oVHv8G55QYbXRweZbdhrPwLpLounxQC7VikdYUf/go-libp2p-interface-conn"
+	iconn "gx/ipfs/QmWnFtANrLLh7YoAf55M4tdQ3qdESRq5MCwicSAscFVn8s/go-libp2p-interface-conn"
 	ma "gx/ipfs/QmcyqRMCAXVtYPS4DiBrA7sezL9rRGfW8Ctx7cywL4TXJj/go-multiaddr"
 	"gx/ipfs/Qmf1Gq7N45Rpuw7ev47uWgH6dLPtdnvcMRNPkVBwqjLJg2/go-multiaddr-net"
 )
